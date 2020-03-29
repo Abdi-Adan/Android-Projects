@@ -8,6 +8,7 @@ The project tackles how to; Create, Retrieve, Update and Delete (CRUD) data over
 2. Serialize plain dart objects into a dart map and JSON using a library called json_serializerble 
 3. Making http requests with the http library, 
 4. Making http requests with the chopper library
+5. Using facebook_audience_network package for facebook audience network ads (Standard Banner Ads)
 
 Prerequisites 
 1. Basics of Programing languages 
@@ -15,4 +16,6 @@ Prerequisites
 3. Flutter Framework
 
 Dependencies 
-1. Flutter Version 1.9(Course)
+1. Flutter: ^1.9(Course)
+2. get_it: ^4.0.1
+3. http: ^0.12.0+4
