@@ -9,7 +9,11 @@ class NoteModify extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(isEditing ? 'Edit note' : 'Create note')),
+      appBar: AppBar(
+          title: Text(
+        isEditing ? 'Edit note' : 'Create note',
+        style: TextStyle(color: Colors.white),
+      )),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
@@ -26,7 +30,9 @@ class NoteModify extends StatelessWidget {
               width: double.infinity,
               height: 35,
               child: RaisedButton(
-                child: Text('Submit', style: TextStyle(color: Colors.white)),
+                child: Text('Submit',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold)),
                 color: Theme.of(context).primaryColor,
                 onPressed: () {
                   Navigator.of(context).pop();

@@ -27,16 +27,24 @@ class _NoteListState extends State<NoteList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('List of notes')),
+      appBar: AppBar(
+          title: Text(
+        'List of notes',
+        style: TextStyle(color: Colors.white),
+      )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (_) => NoteModify()));
         },
-        child: Icon(Icons.add),
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
       ),
       body: ListView.separated(
-        separatorBuilder: (_, __) => Divider(height: 1, color: Colors.green),
+        separatorBuilder: (_, __) =>
+            Divider(height: 1, color: Colors.transparent),
         itemBuilder: (_, index) {
           return Dismissible(
             key: ValueKey(notes[index].noteID),
@@ -56,17 +64,27 @@ class _NoteListState extends State<NoteList> {
                 alignment: Alignment.centerLeft,
               ),
             ),
-            child: ListTile(
-              title: Text(
-                notes[index].noteTitle,
-                style: TextStyle(color: Theme.of(context).primaryColor),
+            child: Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 10,
+                vertical: 2,
               ),
-              subtitle: Text(
-                  'Last edited on ${formatDateTime(notes[index].latestEditDateTime)}'),
-              onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (_) => NoteModify(noteID: notes[index].noteID)));
-              },
+              child: Card(
+                elevation: 10,
+                child: ListTile(
+                  title: Text(
+                    notes[index].noteTitle,
+                    style: TextStyle(color: Theme.of(context).primaryColor),
+                  ),
+                  subtitle: Text(
+                      'Last edited on ${formatDateTime(notes[index].latestEditDateTime)}'),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (_) =>
+                            NoteModify(noteID: notes[index].noteID)));
+                  },
+                ),
+              ),
             ),
           );
         },
