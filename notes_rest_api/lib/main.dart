@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
+import 'package:notes_rest_api/services/notes_service.dart';
 import 'package:notes_rest_api/views/notes_list.dart';
 
-void main() => runApp(App());
+void setupLocator() {
+  GetIt.I.registerLazySingleton(() => NotesService());
+}
 
-class App extends StatelessWidget {
+void main() {
+  setupLocator();
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
