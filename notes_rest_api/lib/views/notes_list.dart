@@ -43,13 +43,25 @@ class _NoteListState extends State<NoteList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('Notes', style: TextStyle(color: Colors.white,),)),
+        appBar: AppBar(
+            title: Text(
+          'Notes',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        )),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (_) => NoteModify()));
+                .push(MaterialPageRoute(builder: (_) => NoteModify()))
+                .then((_) {
+              _fetchNotes();
+            });
           },
-          child: Icon(Icons.add, color: Colors.white,),
+          child: Icon(
+            Icons.add,
+            color: Colors.white,
+          ),
         ),
         body: Builder(
           builder: (_) {
