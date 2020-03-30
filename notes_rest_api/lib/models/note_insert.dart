@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 
-class NoteInsert {
+class NoteManipulation {
   String noteTitle;
   String noteContent;
 
-  NoteInsert(
+  NoteManipulation(
     {
       @required this.noteTitle,
       @required this.noteContent,
