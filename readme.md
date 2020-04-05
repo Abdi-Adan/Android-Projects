@@ -4,4 +4,4 @@ This is a flutter projects repository containing different projects with the aim
 
 The idea is to build fully functional cross-platform mobile apps with special focus on android and a complete backend built with webAPIs, firebase etc.
 
-# find screenshots of projects done below
+Find screenshots of projects done below:
