@@ -4,4 +4,10 @@ This is a flutter projects repository containing different projects with the aim
 
 The idea is to build fully functional cross-platform mobile apps with special focus on android and a complete backend built with webAPIs, firebase etc.
 
-Find screenshots of projects done below:
+## Includes apps with
+
+1. Scribe (Notekeeper app) consuming a REST API from swagger API gateway for keeping notes
+2. Firebase intergration
+3. Firebase_auth package for email-password-signin and authentication
+
+### Find screenshots of projects done below
