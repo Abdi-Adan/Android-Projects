@@ -1,3 +1,4 @@
+import 'package:flutfire/Screens/authenticate/signIn.dart';
 import 'package:flutter/material.dart';
 
 class Authenticate extends StatefulWidget {
@@ -12,7 +13,7 @@ class _AuthenticateState extends State<Authenticate> {
       body: SafeArea(
         child: Center(
           child: Container(
-            child: Text("You are authenticated"),
+            child: SignIn(),
           ),
         ),
       ),
