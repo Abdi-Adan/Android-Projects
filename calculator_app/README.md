@@ -9,4 +9,4 @@
 
 - 'math_expressions' for solving math equations.
 
-![Layout ScreenShot](/images/ss_01.jpeg)
+![Layout ScreenShot](https://user-images.githubusercontent.com/53440762/79022182-05b7ff00-7b86-11ea-94cd-13a8926a0a6a.jpeg)
