@@ -11,3 +11,8 @@ The idea is to build fully functional cross-platform mobile apps with special fo
 3. Firebase_auth package for email-password-signin and authentication
 
 ### Find screenshots of projects done below
+
+**Scribe- Notekeeper app**
+
+**Calculator App**
+![Layout ScreenShot](assets/images/ss_01.jpeg)
